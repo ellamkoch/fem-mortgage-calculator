@@ -1,0 +1,28 @@
+/* Media Queries To change the background color */
+@media (min-width: 900px) {
+  .main {
+    max-width: 1120px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr; /* form a bit wider */
+    gap: 2.4rem;
+    align-items: stretch;
+  }
+  .main__leftColumn {
+    background: #fff;
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 12px 30px rgba(0,0,0,.06);
+  }
+  .main__rightColumn {
+    background: hsl(202, 55%, 16%); /* slate-900 */
+    color: #fff;
+    border-radius: 1.2rem;
+    padding: 3rem 2.4rem;
+    /* big rounded corner like comps */
+    border-bottom-left-radius: 4rem;
+  }
+  .main__rightColumn__default,
+  .main__rightColumn__results { height: 100%; }
+}

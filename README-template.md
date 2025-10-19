@@ -1,6 +1,6 @@
 # Frontend Mentor - Mortgage repayment calculator solution
 
-This is a solution to the [Mortgage repayment calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Mortgage repayment calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -36,7 +36,7 @@ Users should be able to:
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -52,63 +52,55 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS custom properties and utilities and variable files
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Multiple js scripts to do computations and validity
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This week focused on bringing HTML and CSS together with JavaScript to create an interactive calculator.  As part of doing this challenge, I followed along with many of the videos and during the class sessions where Ulises walked us through how he would go about designing this for mobile.
 
-To see how you can add code snippets, see below:
+We built the html page first, then styled, then did some of the javascript which does the mortgage calculations for the page in the background.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+After watching the videos, and ensuring most of the code completed similar to Ulises repo on GitHub, I also tried to compare the design images with what was in my live server display and adjusted it from what Ulises had originally to my own in areas where I thought it could be improved upon or wasn't quite close. Like the font size in the inputs, and the color of the labels for years, %, etc. There were portions of the page, like the spans that I commented out the styles and adjusted them by targeting them closer, which allowed me to have more control over those areas I just mentioned, and the radio selection area for Repayment and Interest.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I did have to do some googling to find a way to override my system colors on the radio with the colors that were shown in the completed mobile design.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Key learnings:
+- More about how to select elements and dynamically update text content using `document.querySelector()` and `.textContent`.
+- How to import functions between files using `export default` and `import`.
+- How to toggle visibility of sections using `.style.display`.
+- How to use custom validation and styling states (`.invalid`) to guide user feedback.
+- Learned how "em" is used for width, height and border width control to help with appearance of the radio buttons. -
+- Transform can help to improve alignment of radio buttons with text.
+- How to set accent colors in CSS
 
-### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+### Continued development  - Update this more later
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+When this project is revisited, the next steps will include:
+- Full validation for all fields (term and interest rate)
+- Adding functionality for “Interest Only” mortgages
+- Enabling the “Clear All” link to reset the form and results
+- Improved error visuals for each invalid input
+- Optional formatting of inputs (e.g., commas, £ symbol on keypress)
+
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- CodeX Academy Weekly Lectures – helped connect front-end structure to JavaScript logic.
+- MDN: Form Validation Guide – understanding .preventDefault() and custom validation.
+- Frontend Mentor Community Discussions – for comparing responsive approaches and styles.
+- Modern CSS for learning about styling radio buttons and how to use "em" - https://moderncss.dev/pure-css-custom-styled-radio-buttons/
+- Stackflow fourm for setting accent colors - https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Ella Koch
+- Frontend Mentor - [@ellamkoch](https://www.frontendmentor.io/profile/ellamkoch)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks to Ulises (CodeX instructor) for the example code and step-by-step approach, and to Frontend Mentor for providing the base challenge files.

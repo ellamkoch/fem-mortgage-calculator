@@ -1,0 +1,33 @@
+/* Mortgage Calculator Variables*/
+/* Load Custom font*/
+/* local font */
+@font-face {
+    font-family: 'Plus Jakarta Medium';
+    src:url('../../assets/fonts/static/PlusJakartaSans-Medium.ttf');
+
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Bold';
+    src:url('../../assets/fonts/static/PlusJakartaSans-Bold.ttf');
+
+}
+
+:root {
+    /*Typogoraphy */
+    --font-jakarta-medium: 'Plus Jakarta Regular', sans-serif;
+    --font-jakarta-bold: 'Plus Jakarta Bold', sans-serif;
+
+/* color palette (neutral + brand accent*/
+--color-primary: hsl(61,70%,52%);
+--color-secondary: hsl(4,69%, 50%);
+
+--color-white: hsl(0, 0%, 100%);
+--color-slate-100: hsl(202, 86%, 94%);
+--color-slate-300: hsl(202, 41%, 72%);
+--color-slate-500: hsl(202, 26%, 54%);
+--color-slate-700: hsl(200, 24%, 40%);
+--color-slate-900: hsl(202, 55%, 16%);
+
+}
+
