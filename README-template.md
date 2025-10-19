@@ -54,7 +54,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties and utilities and variable files
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - Multiple js scripts to do computations and validity
 
@@ -64,7 +63,7 @@ This week focused on bringing HTML and CSS together with JavaScript to create an
 
 We built the html page first, then styled, then did some of the javascript which does the mortgage calculations for the page in the background.
 
-After watching the videos, and ensuring most of the code completed similar to Ulises repo on GitHub, I also tried to compare the design images with what was in my live server display and adjusted it from what Ulises had originally to my own in areas where I thought it could be improved upon or wasn't quite close. Like the font size in the inputs, and the color of the labels for years, %, etc. There were portions of the page, like the spans that I commented out the styles and adjusted them by targeting them closer, which allowed me to have more control over those areas I just mentioned, and the radio selection area for Repayment and Interest.
+After watching the videos, and ensuring most of the complete code was similar to Ulises repo on GitHub, I tried to compare the design images with what was in my live server display and adjusted it from what Ulises had originally to my own in areas where I thought it could be improved upon or wasn't quite close. Like the font size in the inputs, and the color of the labels for years, %, etc. There were portions of the page, like the spans that I commented out the styles and adjusted them by targeting them closer, which allowed me to have more control over those areas I just mentioned, and the radio selection area for Repayment and Interest.
 
 I did have to do some googling to find a way to override my system colors on the radio with the colors that were shown in the completed mobile design.
 
@@ -77,16 +76,32 @@ Key learnings:
 - Transform can help to improve alignment of radio buttons with text.
 - How to set accent colors in CSS
 
+#### Code snippets I'm proud of:
+
+```css
+.choice__item input[type="radio"] {
+  appearance: none;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 2px solid var(--color-slate-500);
+  border-radius: 50%;
+  position: relative;
+}
+
+.choice__item input[type="radio"]:checked {
+  border-color: var(--color-primary);
+  background: radial-gradient(circle at center, var(--color-primary) 50%, transparent 51%);
+}
+```
 
 ### Continued development  - Update this more later
 
 When this project is revisited, the next steps will include:
 - Full validation for all fields (term and interest rate)
 - Adding functionality for “Interest Only” mortgages
-- Enabling the “Clear All” link to reset the form and results
+- Enabling the “Clear All” link to reset the form and results, similar to how a button would
 - Improved error visuals for each invalid input
 - Optional formatting of inputs (e.g., commas, £ symbol on keypress)
-
 
 ### Useful resources
 
@@ -94,7 +109,8 @@ When this project is revisited, the next steps will include:
 - MDN: Form Validation Guide – understanding .preventDefault() and custom validation.
 - Frontend Mentor Community Discussions – for comparing responsive approaches and styles.
 - Modern CSS for learning about styling radio buttons and how to use "em" - https://moderncss.dev/pure-css-custom-styled-radio-buttons/
-- Stackflow fourm for setting accent colors - https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons
+- Stackflow forum for setting accent colors - https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons
+- MDN for styling the radio buttons with gradients - https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient
 
 ## Author
 
