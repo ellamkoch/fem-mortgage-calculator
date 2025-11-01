@@ -122,11 +122,7 @@ if (hasError) return;
 ### Continued development  - Update this more later
 
 When this project is revisited, the next steps will include:
-- Full validation for all fields (term and interest rate)
-- Adding functionality for “Interest Only” mortgages
-- Enabling the “Clear All” link to reset the form and results, similar to how a button would
-- Improved error visuals for each invalid input
-- Optional formatting of inputs (e.g., commas, £ symbol on keypress)
+-Figure out how to make fields that are in a column in the mobile version can be side by side and in a row within the desktop version. 
 
 ### Useful resources
 
