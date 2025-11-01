@@ -231,10 +231,11 @@ body {
 
 /* Right column styles*/
 .main__rightColumn {
-    background-color: var(--color-slate-900); /*linking to variables in variables.css*/
+    background-color: hsla(201, 56%, 16%, 0.965); /*had to adjust the transparency to get it closer*/
     width: 100%; /* so it matches the other column*/
     min-height: 40%;
     padding: 3rem 0 6rem;
+    margin-top: 4rem;
 
 }
 
@@ -256,17 +257,31 @@ body {
     text-align: left;
 }
 
-.main__rightColumn__default__title,
-.main_rightColumn__results__title {
-    font-size: 1.8rem;
+.main__rightColumn__default__title {
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     font-family: 'Plus Jakarta Bold';
     color: var(--color-white)
 
 }
 
-.main__rightColumn__default__text,
-.main__rightColumn__results__text,
+.main__rightColumn__results__title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Plus Jakarta Bold';
+    color: var(--color-white)
+}
+
+
+.main__rightColumn__default__text {
+    font-size: 1.4rem;
+    color: var(--color-slate-500);
+    width: 80%;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 1rem;
+}
+
 .resultsContainer__text {
     font-size: 1.4rem;
     color: var(--color-slate-500);
@@ -275,27 +290,53 @@ body {
     text-align: center;
 }
 
+.main__rightColumn__results__text {
+    font-size: 1.6rem;
+    color: var(--color-slate-500);
+    width: 100%;
+    line-height: 2.2rem;
+    text-align: left;
+
+}
+
 /* Results Styles*/
 .main__rightColumn__results {
     text-align: left;
 }
 
-.main__rightColumn__results__text {
-    width: 100%;
-}
+
 
 .resultsContainer {
-    background-color: hsl(202, 56%, 6%);
-    padding: 1.5rem 1rem;
+    background-color: var(--color-slate-900);
+    padding: 2rem 1.6rem;
     margin-top: 2rem;
     border-radius: 1rem;
+    position: relative; /* makes yellow accent bar appear*/
+    padding-top: 1.4rem;
 
+}
+
+.resultsContainer__text {
+    width: 100%;
+    text-align: left;
+}
+
+/* this helps to get the bar in place at the top of the results container. */
+.resultsContainer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--color-primary);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 #monthlyResult {
     font-family: 'Plus Jakarta Bold';
     margin: 1rem 0;
-    font-size: 3.2rem;
+    font-size: 3.6rem;
+    line-height: 1.1;
     color: var(--color-primary);
 
 }
@@ -310,7 +351,7 @@ body {
 #withBorder {
     border-bottom: solid 1px #cccccc22;
     margin-bottom: 1.5rem;
-
+    padding-bottom: 1.2rem;
 }
 
 /* error selectors */
@@ -327,9 +368,16 @@ body {
     color: var(--color-white);
 
 }
+.input.invalid .input__suffix {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border-radius: 0;
+}
+
 
 .input__error {
     color: var(--color-secondary);
     margin-bottom: 1.5rem;
+    font-size: 1.2rem;
 
 }

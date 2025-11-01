@@ -14,7 +14,7 @@
 }
 
 :root {
-    /*Typogoraphy */
+    /*Typography */
     --font-jakarta-medium: 'Plus Jakarta Regular', sans-serif;
     --font-jakarta-bold: 'Plus Jakarta Bold', sans-serif;
 
@@ -29,5 +29,8 @@
 --color-slate-700: hsl(200, 24%, 40%);
 --color-slate-900: hsl(202, 55%, 16%);
 
-}
 
+}
+body {
+    background: var(--color-slate-100); /*forgot the background color. this sets it*/
+}
